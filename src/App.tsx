@@ -1,33 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import  { Routes, Route } from 'react-router-dom'
+import { Navbar } from './components/Navbar';
+import { AboutUs } from './pages/AboutUs';
+import { Home } from './pages/Home';
+import { Consulting } from './pages/Consulting';
+import { Recruiting } from './pages/Recruiting';
+import { GetAJob } from './pages/GetAJob';
+import { ContactUs } from './pages/ContactUs';
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const links = [
+    { name: 'CONSULTING', href: '/consulting' },
+    { name: 'RECRUITING', href: '/recruiting' },
+    { name: 'GET A JOB', href: '/get_a_job' },
+    { name: 'ABOUT US', href: '/about_us' },
+    { name: 'CONTACT US', href: '/contact_us' },
+  ];
 
   return (
+    
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Navbar 
+      logo='/gbd.svg'
+      companyName='GBD Company LTD'
+      links={links}
+      showSearch={true}
+    />
+    <Routes>
+
+    <Route path='/' element={<Home/>}/>
+    <Route path='/consulting' element={<Consulting/>}/>
+    <Route path='/recruiting' element={<Recruiting/>}/>
+    <Route path='/get_a_job' element={<GetAJob/>}/>
+    <Route path='/about_us' element={<AboutUs/>}/>
+    <Route path='/contact_us' element={<ContactUs/>}/>
+    </Routes>
+    
+    
     </>
   )
 }
