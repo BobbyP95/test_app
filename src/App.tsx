@@ -13,22 +13,22 @@ import { ContactUs } from './pages/ContactUs';
 
 function App() {
   const links = [
-    { name: 'CONSULTING', href: '/consulting' },
-    { name: 'RECRUITING', href: '/recruiting' },
-    { name: 'GET A JOB', href: '/get_a_job' },
-    { name: 'ABOUT US', href: '/about_us' },
-    { name: 'CONTACT US', href: '/contact_us' },
+    { name: "CONSULTING", href: "/test_app/#/consulting" },
+    { name: "RECRUITING", href: "/test_app/#/recruiting" },
+    { name: "GET A JOB", href: "/test_app/#/get_a_job" },
+    { name: "ABOUT US", href: "/test_app/#/about_us" },
+    { name: "CONTACT US", href: "/test_app/#/contact_us" },
   ];
 
+  const BASE_URL = import.meta.env.BASE_URL;
   return (
-    
     <>
-    <Navbar 
-      logo='/gbd.svg'
-      companyName='GBD Company LTD'
-      links={links}
-      showSearch={true}
-    />
+      <Navbar
+        logo={`${BASE_URL}gbd.svg`}
+        companyName="GBD LTD"
+        links={links}
+        showSearch={true}
+      />
     <Routes>
 
     <Route path='/' element={<Home/>}/>
