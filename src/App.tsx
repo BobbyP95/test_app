@@ -24,7 +24,6 @@ function App() {
   return (
     <>
       <Navbar
-        logo={`/gbd.svg`}
         companyName="GBD LTD"
         links={links}
         showSearch={true}

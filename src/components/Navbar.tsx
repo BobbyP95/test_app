@@ -1,8 +1,7 @@
 import "../App.css";
 import { SocialIcon } from "react-social-icons";
-import gbdLogo from "/public/gbd.svg";
+import gbdLogo from "/gbd.svg";
 type NavbarProps = {
-  logo: string;
   companyName: string;
   links?: { name: string; href: string }[];
   showSearch?: boolean;
@@ -13,7 +12,6 @@ const socialMediaUrls = [
   "https://instagram.com/",
 ];
 export function Navbar({
-  logo= gbdLogo,
   companyName,
   links = [],
   showSearch = true,
@@ -48,7 +46,7 @@ export function Navbar({
             <div className="flex items-center">
               <a href="/">
                 <img
-                  src={logo}
+                  src={gbdLogo}
                   alt={`${companyName} logo`}
                   className="h-8 w-28 mr-2"
                 />
