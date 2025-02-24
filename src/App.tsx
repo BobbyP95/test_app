@@ -20,7 +20,7 @@ function App() {
     { name: "CONTACT US", href: "/test_app/#/contact_us" },
   ];
 
-  const BASE_URL = import.meta.env.VITE_BASE_URL;
+  // const BASE_URL = import.meta.env.VITE_BASE_URL;
   return (
     <>
       <Navbar
