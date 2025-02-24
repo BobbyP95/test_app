@@ -1,5 +1,6 @@
 import "../App.css";
 import { SocialIcon } from "react-social-icons";
+import gbdLogo from "/public/gbd.svg";
 type NavbarProps = {
   logo: string;
   companyName: string;
@@ -12,7 +13,7 @@ const socialMediaUrls = [
   "https://instagram.com/",
 ];
 export function Navbar({
-  logo,
+  logo= gbdLogo,
   companyName,
   links = [],
   showSearch = true,

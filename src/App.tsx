@@ -20,7 +20,7 @@ function App() {
     { name: "CONTACT US", href: "/test_app/#/contact_us" },
   ];
 
-  const BASE_URL = import.meta.env.BASE_URL;
+  const BASE_URL = import.meta.env.VITE_BASE_URL;
   return (
     <>
       <Navbar
@@ -31,12 +31,12 @@ function App() {
       />
     <Routes>
 
-    <Route path='/' element={<Home/>}/>
-    <Route path='/consulting' element={<Consulting/>}/>
-    <Route path='/recruiting' element={<Recruiting/>}/>
-    <Route path='/get_a_job' element={<GetAJob/>}/>
-    <Route path='/about_us' element={<AboutUs/>}/>
-    <Route path='/contact_us' element={<ContactUs/>}/>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/consulting" element={<Consulting/>}/>
+    <Route path="/recruiting" element={<Recruiting/>}/>
+    <Route path="/get_a_job" element={<GetAJob/>}/>
+    <Route path="/about_us" element={<AboutUs/>}/>
+    <Route path="/contact_us" element={<ContactUs/>}/>
     </Routes>
     
     
