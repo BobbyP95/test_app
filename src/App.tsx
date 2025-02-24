@@ -10,11 +10,11 @@ import { ContactUs } from "./pages/ContactUs";
 
 function App() {
   const links = [
-    { name: "CONSULTING", href: "/test_app/#/consulting" },
-    { name: "RECRUITING", href: "/test_app/#/recruiting" },
-    { name: "GET A JOB", href: "/test_app/#/get_a_job" },
-    { name: "ABOUT US", href: "/test_app/#/about_us" },
-    { name: "CONTACT US", href: "/test_app/#/contact_us" },
+    { name: "CONSULTING", href: "/#/consulting" },
+    { name: "RECRUITING", href: "/#/recruiting" },
+    { name: "GET A JOB", href: "/#/get_a_job" },
+    { name: "ABOUT US", href: "/#/about_us" },
+    { name: "CONTACT US", href: "/#/contact_us" },
   ];
 
   // const BASE_URL = import.meta.env.VITE_BASE_URL;
