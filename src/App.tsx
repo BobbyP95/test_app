@@ -1,5 +1,5 @@
 import "./App.css";
-import { HashRouter as Router, Routes, Route } from "react-router-dom"; // Import HashRouter
+import { Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { AboutUs } from "./pages/AboutUs";
 import { Home } from "./pages/Home";
@@ -10,25 +10,26 @@ import { ContactUs } from "./pages/ContactUs";
 
 function App() {
   const links = [
-    { name: "CONSULTING", href: "/#/consulting" }, // Use correct paths
-    { name: "RECRUITING", href: "/#/recruiting" },
-    { name: "GET A JOB", href: "/#/get-a-job" }, // Use hyphens instead of spaces
-    { name: "ABOUT US", href: "/#/about-us" },
-    { name: "CONTACT US", href: "/#/contact-us" },
+    { name: "CONSULTING", href: "/test_app/#/consulting" },
+    { name: "RECRUITING", href: "/test_app/#/recruiting" },
+    { name: "GET A JOB", href: "/test_app/#/get_a_job" },
+    { name: "ABOUT US", href: "/test_app/#/about_us" },
+    { name: "CONTACT US", href: "/test_app/#/contact_us" },
   ];
 
+  // const BASE_URL = import.meta.env.VITE_BASE_URL;
   return (
-    <Router> {/* Wrap your app with HashRouter */}
+    <>
       <Navbar companyName="GBD LTD" links={links} showSearch={true} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/consulting" element={<Consulting />} />
         <Route path="/recruiting" element={<Recruiting />} />
-        <Route path="/get-a-job" element={<GetAJob />} /> {/* Use hyphens */}
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/get_a_job" element={<GetAJob />} />
+        <Route path="/about_us" element={<AboutUs />} />
+        <Route path="/contact_us" element={<ContactUs />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 
