@@ -18,7 +18,7 @@ export function Navbar({
 }: NavbarProps) {
   return (
     <>
-      <div className="header">
+      <div id="header" className="header ">
         <div className="topNav p-2 flex items-center justify-end gap-8 w-full bg-emerald-950 ">
           {showSearch && (
             <div className="relative">

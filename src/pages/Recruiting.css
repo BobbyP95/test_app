@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.recruiting_grid{
+    display: grid;
+    height: 400px;
+
+    grid-template-rows: repeat(8, 20vh);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    /* gap: 10px; */
+    min-height: 100vh;
+    z-index: -1;
+}
+
+.r_item_1{
+    grid-column: span 4;
+    grid-row: span 3;
+    background-image: url('/recruiting.jpg');
+    background-size: cover;
+}
+.r_item_1 div{
+    background-color: rgb(100, 48, 6);
+}
+
+.r_item_2{
+    grid-column: span 2;
+    grid-row: span 2;
+    color: rgb(8, 67, 48);
+
+}
+
+.r_item_3{
+    grid-column: span 2;
+    grid-row: span 2;
+}

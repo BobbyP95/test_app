@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.consulting_grid{
+    display: grid;
+    grid-template-rows: repeat(8, 20vh);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    /* gap: 10px; */
+    min-height: 100vh;
+
+    
+}
+
+.item{
+    @apply flex justify-center items-center text-white;
+}
+
+.item_1{
+    
+    grid-column: span 4;
+    grid-row: span 3;
+    background-image: url('/conImg2.jpg');
+    background-size: cover;
+
+}
+.btn{
+    transition: all 0.5s;
+}
+.btn:hover{
+    opacity: 50%;
+}
+.btn:active{
+    opacity: 100%;
+}
+
+.item_2{
+    grid-column: span 4;
+    grid-row: span 1;
+    @apply bg-slate-200;
+    color: rgb(8, 67, 48);
+    background-image: linear-gradient(to bottom, #e2e8f0,  #ffffff );
+    
+
+}
+.item_2 h3{
+    font-size: 600%;
+    text-shadow: 10px 15px 25px;
+}
+
+.item_3{
+    grid-column: span 2;
+    grid-row: span 2;
+    font-size: 200%;
+    font-weight: 500;
+    padding: 2rem;
+    color: rgb(8, 67, 48);
+
+}
+.item_4{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.item_5{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.item_6{
+    grid-column: span 2;
+    grid-row: span 2;
+    font-size: 200%;
+    font-weight: 500;
+    padding: 2rem;
+    color: rgb(8, 67, 48);
+}
