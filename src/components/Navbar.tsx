@@ -1,21 +1,40 @@
-import "../App.css";
 import { SocialIcon } from "react-social-icons";
+import { Link } from "react-router-dom";
 import gbdLogo from "/gbd.svg";
+import { useState } from "react";
+import "../components/navBar.css";
+
+
 type NavbarProps = {
   companyName: string;
   links?: { name: string; href: string }[];
   showSearch?: boolean;
 };
+
 const socialMediaUrls = [
   "https://twitter.com/",
   "https://facebook.com/",
   "https://instagram.com/",
 ];
+
 export function Navbar({
   companyName,
   links = [],
   showSearch = true,
 }: NavbarProps) {
+  const [menuOpen, setMenuOpen] = useState("open");
+  const [id_label, setId_label] = useState("normal"); 
+  
+  function handleButton(){
+    if(menuOpen == "open"){
+      setMenuOpen("close")
+      setId_label("side")
+    }else{
+      setMenuOpen("open")
+      setId_label("normal")
+    }
+  }
+
   return (
     <>
       <div id="header" className="header ">
@@ -29,7 +48,7 @@ export function Navbar({
               />
             </div>
           )}
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 pr-3">
             {socialMediaUrls.map((url, index) => (
               <SocialIcon
                 key={index}
@@ -40,7 +59,7 @@ export function Navbar({
             ))}
           </div>
         </div>
-        <nav className=" bg-gray-300 p-4 ">
+        <nav className=" bg-gray-300 p-2 ">
           <div className=" container mx-auto flex items-center justify-between">
             {/* Left side: Logo and Company Name */}
             <div className="flex items-center">
@@ -58,19 +77,27 @@ export function Navbar({
             </div>
 
             {/* Right side: Links and optional search box */}
-            <div id="navMenu1" className={`navMenu hidden flex-col text-sm lg:flex-row items-center lg:flex space-x-4  `}>
+            <div
+              id={id_label}
+              className={`navMenu flex text-sm md:flex-row items-center ${menuOpen} `}
+            >
               {links.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
-                  className="rightLinks font-semibold text-emerald-900 hover:text-emerald-950"
+                  to={link.href}
+                  className="rightLinks font-semibold text-emerald-900 hover:text-emerald-950 "
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
-            <div className="dots text-3xl lg:hidden ">
-                <h1>...</h1>
+            <div
+              className={`menu-button ${menuOpen} bg-white p-1 flex flex-col justify-around items-center rounded-full text-3xl md:hidden relative `}
+              onClick={handleButton}
+            >
+              <div className="bar"></div>
+              <div className="bar mid-bar"></div>
+              <div className="bar"></div>
             </div>
           </div>
         </nav>

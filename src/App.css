@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-#header{
+/* #header{
   position:sticky;
   top: 0;
   width: 100%;
@@ -15,7 +15,7 @@ nav div{
 nav .rightLinks:hover{
   text-shadow: 0px 0px 2px #022c22;
 }
-
+ */
 
 
 
@@ -49,8 +49,8 @@ nav .rightLinks:hover{
 }
 
 
-/* @media screen and (min-width: 780px) {
+@media screen and (min-width: 780px) {
   .navMenu{
     flex-direction: column;
   }
-} */
+}

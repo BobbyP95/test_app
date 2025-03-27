@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100vw; /* Use viewport width units */
+    box-sizing: border-box; /* Include padding/borders in width calculation */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }

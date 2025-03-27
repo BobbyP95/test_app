@@ -1,0 +1,112 @@
+#header{
+    position:sticky;
+    top: 0;
+    width: 100%;
+  }
+nav div{
+    max-width: 1200px;
+  }
+  
+  nav.rightLinks:hover{
+    text-shadow: 0px 0px 2px #022c22;
+  }
+.menu-button{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+    
+}
+.bar{
+    width: 80%;
+    height: 15%;
+    background-color: #022c22;
+    border-radius: 10rem;
+    transition: all 300ms ease-in-out;
+    /* transition: background-color 100ms ease-in-out; */
+}
+
+.menu-button:active{
+    background-color: aliceblue;
+}
+
+.menu-button:hover .mid-bar{
+    width: 100%;
+}
+
+.close:hover .mid-bar{
+    width: 80%;
+}
+.cross{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    background-color: #022c22;
+    transition: 600ms ease-in-out;
+}
+
+.close  .bar{
+    position: absolute;
+    transform: rotate(-45deg);
+    height: 10%
+}
+
+.close  .mid-bar{
+    transform: rotate(45deg);
+}
+
+.close{
+    right: 0;
+    position: absolute;
+}
+
+.navMenu{
+    position: relative;
+
+}
+
+.navMenu a{
+    margin-left: 1rem;
+    transition: 300ms ease-in-out;
+    height: 100%;
+    padding: 0.4rem;
+}
+.navMenu a:hover{
+    background-color: #022c2228;
+    border-bottom: ;
+}
+
+@media (max-width:767px) {
+    
+    #normal{
+        top: 100px;
+        right: -900px;
+        display: flex;
+        position: absolute;
+        background-color: rgb(209, 213, 219 );
+        flex-direction: column;
+        transition: all 400ms ease-in-out;
+        width: 35dvh;
+
+    }
+    #side{
+        top: 85px;
+        padding-left: 1rem;
+        right: 0px;
+        display: flex;
+        position: absolute;
+        background-color: rgb(209, 213, 219 );
+        flex-direction: column;
+        align-items: flex-start;
+        transition: all 400ms ease-in-out;
+        width: 35dvh;
+    }
+    #side a {
+        margin-bottom: 1rem;
+    }
+}
+
+#side{
+    right: 0px;
+    transition: all 600ms ease-in-out;
+}

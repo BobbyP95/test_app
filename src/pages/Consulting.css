@@ -9,7 +9,7 @@
     grid-template-rows: repeat(8, 20vh);
     grid-template-columns: repeat(4, minmax(0, 1fr));
     /* gap: 10px; */
-    min-height: 100vh;
+    min-height: 100dvh;
 
     
 }
@@ -37,6 +37,7 @@
 }
 
 .item_2{
+    position: relative;
     grid-column: span 4;
     grid-row: span 1;
     @apply bg-slate-200;
@@ -46,7 +47,8 @@
 
 }
 .item_2 h3{
-    font-size: 600%;
+    font-size: 4rem;
+    /* background-color: aqua; */
     text-shadow: 10px 15px 25px;
 }
 

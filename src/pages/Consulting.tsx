@@ -1,4 +1,5 @@
 import { Footer } from "../components/Footer";
+import { Link } from "react-router-dom";
 import "./Consulting.css";
 
 export function Consulting() {
@@ -13,12 +14,12 @@ export function Consulting() {
             <h4 className="text-emerald-600 text-3xl font-bold">
               Ask our team for help
             </h4>
-            <a href="/#/contact_us">
+            <Link to={"/contact_us"}>
               {" "}
-              <button className="btn bg-green-700 text-3xl m-9 p-2 rounded-2xl shadow-xl text-center ">
+              <button className="btn bg-green-700 text-xl m-9 p-2 rounded-2xl shadow-xl text-center ">
                 CONTACT US
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="item item_2">

@@ -1,12 +1,11 @@
 
 
 
-export function ContactUs(){
-    return(
-        <><div className="pt-28">
+export function ContactUs() {
+  return (
+    <>
 
-        </div>
-            <h1>ContactUs Page!!!</h1>
-        </>
-    )
+      <h1>ContactUs Page!!!</h1>
+    </>
+  );
 }
