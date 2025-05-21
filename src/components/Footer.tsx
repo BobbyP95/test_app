@@ -1,13 +1,8 @@
 export function Footer() {
   return (
-    <><div className="w-full bottom-0">
-      <div className="bg-gray-100 p-7 grid lg:grid-cols-4 md:grid-cols-3  gap-4 text-xl ">
-        <div className="flex flex-col w-60">
-          <img className="w-40" src="/gbd.svg" alt="Logo" />
-          <h1 className="my-10 text-2xl text-left font-extrabold text-emerald-950">
-            GBD Company LTD
-          </h1>
-        </div>
+    <><div className="w-full bottom-0 text-white">
+      <div className="bg-emerald-950 p-7 grid grid-cols-3  gap-4 text-sm md:text-md lg:text-xl ">
+        
         <div className="flex flex-col w-60 ">
           <h1 className="font-bold text-left">Company</h1>
           <div className=" mt-3 flex flex-col text-left gap-2" >
@@ -33,6 +28,12 @@ export function Footer() {
           <h3>Code of Conduct</h3>
           <h3>Privacy</h3>
           </div>
+        </div>
+        <div className="flex flex-col w-60 ">
+          <img className="w-40" src="/gbd.svg" alt="Logo" />
+          <h1 className="my-10 text-left font-extrabold text-white">
+            GBD Company LTD
+          </h1>
         </div>
       </div>
       <div className="bg-emerald-950 p-7 flex justify-around text-xl font-light items-center text-white ">

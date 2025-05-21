@@ -92,7 +92,7 @@ export function Navbar({
               ))}
             </div>
             <div
-              className={`menu-button ${menuOpen} bg-white p-1 flex flex-col justify-around items-center rounded-full text-3xl md:hidden relative `}
+              className={`menu-button ${menuOpen}  p-1 flex flex-col justify-around items-center rounded-full text-3xl md:hidden relative `}
               onClick={handleButton}
             >
               <div className="bar"></div>

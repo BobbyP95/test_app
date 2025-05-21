@@ -13,6 +13,7 @@
     "deploy": "vite build && vite-plugin-gh-pages"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.20.6",
     "@types/react-router-dom": "^5.3.3",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.42",

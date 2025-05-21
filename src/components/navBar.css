@@ -15,7 +15,7 @@ nav div{
     height: 2rem;
     cursor: pointer;
     transition: all 400ms ease-in-out;
-    
+    background-color: #022c2200;
 }
 .bar{
     width: 80%;
@@ -73,10 +73,10 @@ nav div{
 }
 .navMenu a:hover{
     background-color: #022c2228;
-    border-bottom: ;
+    /* border-bottom: ; */
 }
 
-@media (max-width:767px) {
+@media (max-width:780px) {
     
     #normal{
         top: 100px;
@@ -103,6 +103,9 @@ nav div{
     }
     #side a {
         margin-bottom: 1rem;
+    }
+    .menu-button{
+        margin-right: 1rem;
     }
 }
 

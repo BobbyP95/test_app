@@ -9,3 +9,8 @@ body {
     box-sizing: border-box; /* Include padding/borders in width calculation */
     overflow-x: hidden; /* Prevent horizontal scrolling */
   }
+  body{
+  font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }

@@ -1,0 +1,54 @@
+.main-div-about{
+    display: grid;
+    /* height: 100dvh; */
+    width: 100dvw;
+    grid-template-columns: 15dvw 35dvw 20dvw 15dvw 15dvw;
+    grid-template-rows: 40dvh auto;
+}
+
+
+.top-item{
+    grid-column: span 5;
+    background-image: url('../assets/working-office.jpg');
+    background-size:cover;
+    background-position: center;
+}
+.top-item div{
+    background-color:#022c229e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: xx-large;
+}
+
+.about{
+    grid-area: 2/2/auto/5;
+    font-size: 340px;
+    text-align:end;
+    line-height: 90%;
+    color: #0332279e;
+
+    
+}
+
+.us{
+    grid-area: 3/4/auto/5;
+    font-size: 190px;
+    font-weight: 900;
+    color: #0332279e;
+    line-height: 90%;
+    /* background-color: #03322739; */
+}
+
+.top-text{
+    grid-area: 3/2/4/4;
+    font-size: 30px;
+    text-align: justify;
+    font-weight: 300;
+    padding: 2% 2% 0% 0%
+}
+.lower-text-div{
+    grid-area: 4/2/auto/5;
+    height: 400px;
+}
