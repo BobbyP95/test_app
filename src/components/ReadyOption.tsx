@@ -1,15 +1,20 @@
+import {Link} from "react-router-dom"
 type ReadyOptionProps = {
+  id: number;
   tailwindColor: string;
   optionText: string;
   buttonText: string;
   cssClass: string;
+  link?: string ;
 };
 
 export function ReadyOption({
+  id,
   tailwindColor,
   optionText,
   buttonText,
   cssClass,
+  link,
 }: ReadyOptionProps) {
   return (
     <>
@@ -24,11 +29,18 @@ export function ReadyOption({
         >
           <div className="flex flex-col ">
             <span>I'm ready to</span>
+            
             <span>{optionText}</span>
+            
           </div>
+          <Link
+            key={id}
+            to={link?link:""}
+            >
           <button className="  w-fit mx-auto border-2 p-3 transition-all hover:bg-white hover:bg-opacity-40 rounded-full">
             {buttonText}
           </button>
+          </Link>
         </div>
       </div>
     </>

@@ -8,6 +8,7 @@ const sections = [
     optionText: "Get TO WORK",
     buttonText: "Call Center",
     cssClass: "callCenter",
+    link: "/contact_us",
   },
   {
     id: 1,
@@ -15,6 +16,7 @@ const sections = [
     optionText: "HIRE PEOPLE",
     buttonText: "Data Entry",
     cssClass: "dataEntry",
+    link:"/recruiting",
   },
   {
     id: 2,
@@ -22,6 +24,7 @@ const sections = [
     optionText: "Get TO WORK",
     buttonText: "Consultation",
     cssClass: "consulting",
+    link : "/consulting"
   },
 ];
 

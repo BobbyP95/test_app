@@ -9,7 +9,7 @@
 /* TOP AREA */
 .top-item{
     grid-column: span 2;
-    background-image: url('../assets/contactMap.jpg');
+    background-image: url('/contactMap.jpg');
     background-size: cover;
 }
 .top-item div{
@@ -36,11 +36,10 @@
     font-size: 2.7rem;
 }
 
-.map{
+.contact-svg{
     width: 70%;
     height: 300px;
-    background-image: url('../assets/map.jpg');
-    border: #022c222c solid 3px;
+    /* border: #022c222c solid 3px; */
 }
 
 .left-item p{

@@ -10,9 +10,9 @@ import { ContactUs } from "./pages/ContactUs";
 
 function App() {
   const links = [
+    { name: "HOME", href: "/" },
     { name: "CONSULTING", href: "/consulting" },
     { name: "RECRUITING", href: "/recruiting" },
-    { name: "GET A JOB", href: "/get_a_job" },
     { name: "ABOUT US", href: "/about_us" },
     { name: "CONTACT US", href: "/contact_us" },
   ];

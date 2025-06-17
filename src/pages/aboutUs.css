@@ -1,4 +1,4 @@
-.main-div-about{
+.about-grid{
     display: grid;
     /* height: 100dvh; */
     width: 100dvw;
@@ -7,48 +7,130 @@
 }
 
 
-.top-item{
+.top-item-about{
     grid-column: span 5;
-    background-image: url('../assets/working-office.jpg');
+    background-image: url('/working-office.jpg');
     background-size:cover;
     background-position: center;
+    z-index: -20;
 }
-.top-item div{
+.top-item-about div{
     background-color:#022c229e;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: xx-large;
+    z-index: -12;
 }
+
 
 .about{
     grid-area: 2/2/auto/5;
-    font-size: 340px;
-    text-align:end;
-    line-height: 90%;
-    color: #0332279e;
-
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19dvw;
     
+    text-align:center;
+    line-height: 90%;
+    color: #033227ca;
+    /* position: relative; */
+    transform: translateY(-10%);
+    z-index: -11;
+    background-color: rgb(255, 255, 255);
 }
 
 .us{
     grid-area: 3/4/auto/5;
-    font-size: 190px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12dvw;
     font-weight: 900;
-    color: #0332279e;
+    color: #033227ca;
     line-height: 90%;
     /* background-color: #03322739; */
 }
 
 .top-text{
     grid-area: 3/2/4/4;
-    font-size: 30px;
+}
+.text{
+    font-size: 1.5dvw;
     text-align: justify;
     font-weight: 300;
-    padding: 2% 2% 0% 0%
+    color: #0332279e;
+    padding: 0% 2% 0% 0%
 }
-.lower-text-div{
-    grid-area: 4/2/auto/5;
-    height: 400px;
-}
+.mid-text{
+    margin-top: 50px;
+    grid-area: 4/2/auto/4; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4dvw;
+    color: #033227ca;
+    text-align: start;
+ }
+ .mid-button{
+    margin-top: 50px;
+    grid-area: 4/4/auto/5; 
+    font-size: 1.5dvw;
+    background-color:#bb930d9e;
+    color: aliceblue;
+    transition: all ease-in-out 200ms;
+ }
+
+ .mid-button:hover{
+    border-radius: 30px;
+ }
+ 
+ .lower-text-div{
+    display: flex;
+    margin-top: 80px;
+    grid-area: 5/2/auto/5;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .lower-text{
+    font-size: 2dvw;
+ }
+
+ .lower-img{
+
+ }
+
+ @media screen and (max-width: 980px) {
+    .about{
+        grid-area: 2/1/auto/6;
+        font-size: 27dvw;
+    }
+    .us{
+        grid-area: 3/4/auto/6;
+        font-size: 20dvw;
+    }
+
+    .top-text{
+        grid-area: 3/1/4/4;
+    }
+    .text{
+        font-size: 2.4dvw;
+        padding: 0% 2% 0% 4%
+    }
+
+    .mid-text{
+        /* margin-top: 50px; */
+        grid-area: 4/1/auto/4;
+        padding-left: 4%;
+        font-size: 5.5dvw; 
+    }
+    .mid-button{
+        /* margin-top: 50px; */
+        grid-area: 4/4/auto/6;
+        margin-right: 2%;
+    } 
+    .lower-text-div{
+        grid-area: 5/1/auto/6;
+        padding: 2dvw;
+    }
+    .lower-img{
+        width: 40dvw;
+    }
+
+ }
