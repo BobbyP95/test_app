@@ -38,10 +38,10 @@ export function ContactUs() {
       )
       .then(
         (result) => {
-          alert("Message sent successfully!");
+          alert(`Message sent successfully!${result.text}`);
         },
         (error) => {
-          alert("Failed to send message. Please try again.");
+          alert(`Failed to send message. Please try again.${error.text}`);
         }
       );
   };
