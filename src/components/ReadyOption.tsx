@@ -1,3 +1,4 @@
+import "../components/ReadyOption.css";
 import {Link} from "react-router-dom"
 type ReadyOptionProps = {
   id: number;
@@ -20,7 +21,7 @@ export function ReadyOption({
     <>
       <div
         className={` 
-      ${cssClass} md:h-full options `}
+      ${cssClass} md:h-full options readyOption-div  `}
       >
         <div
           style={{ backgroundColor: `${tailwindColor}` }}

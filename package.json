@@ -16,6 +16,8 @@
     "@react-google-maps/api": "^2.20.6",
     "@types/react-router-dom": "^5.3.3",
     "autoprefixer": "^10.4.20",
+    "aws-amplify": "^6.15.1",
+    "aws-sdk": "^2.1692.0",
     "emailjs-com": "^3.2.0",
     "postcss": "^8.4.42",
     "react": "^18.3.1",

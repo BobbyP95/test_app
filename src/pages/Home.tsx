@@ -10,14 +10,14 @@ const sections = [
     cssClass: "callCenter",
     link: "/contact_us",
   },
-  {
-    id: 1,
-    tailwindColor: "rgb(228, 143, 69,0.8)",
-    optionText: "HIRE PEOPLE",
-    buttonText: "Data Entry",
-    cssClass: "dataEntry",
-    link:"/recruiting",
-  },
+  // {
+  //   id: 1,
+  //   tailwindColor: "rgb(228, 143, 69,0.8)",
+  //   optionText: "HIRE PEOPLE",
+  //   buttonText: "Data Entry",
+  //   cssClass: "dataEntry",
+  //   link:"/recruiting",
+  // },
   {
     id: 2,
     tailwindColor: "rgb(37, 67, 54,0.8)",
@@ -33,7 +33,7 @@ export function Home() {
     <>
       <div className="home flex flex-col md:flex-row ">
         {sections.map((values) => (
-          <div key={values.id} className=" md:w-1/3  md:h-lvh">
+          <div key={values.id} className=" md:w-1/2  md:h-lvh">
             <ReadyOption  {...values} />
           </div>
         ))}
