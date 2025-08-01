@@ -20,8 +20,9 @@ export function ReadyOption({
   return (
     <>
       <div
+        id={`readyO`}
         className={` 
-      ${cssClass} md:h-full options readyOption-div  `}
+      ${cssClass} md:h-full options readyOption-div `}
       >
         <div
           style={{ backgroundColor: `${tailwindColor}` }}
