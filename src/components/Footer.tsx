@@ -20,7 +20,7 @@ export function Footer() {
           <h3>Privacy</h3>
           </div>
         </div>
-        <div className="flex flex-col w-60">
+        <div className="flex flex-col w-auto">
           <h1 className="font-bold text-left" >Follow Us</h1>
           <div className=" mt-3 flex flex-col text-left gap-2" >
           <h3>Policies</h3>

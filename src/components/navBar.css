@@ -82,7 +82,7 @@ nav div{
         top: 100px;
         right: -900px;
         display: flex;
-        position: absolute;
+        position: fixed;
         background-color: rgb(209, 213, 219 );
         flex-direction: column;
         transition: all 400ms ease-in-out;
