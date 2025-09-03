@@ -7,6 +7,7 @@ import { Consulting } from "./pages/Consulting";
 import { Recruiting } from "./pages/Recruiting";
 import { GetAJob } from "./pages/GetAJob";
 import { ContactUs } from "./pages/ContactUs";
+import {TermsAndPolicies} from "./pages/TermsAndPolicies";
 
 function App() {
   const links = [
@@ -28,6 +29,7 @@ function App() {
           <Route path="/get_a_job" element={<GetAJob />} />
           <Route path="/about_us" element={<AboutUs />} />
           <Route path="/contact_us" element={<ContactUs />} />
+          <Route path="/terms" element={<TermsAndPolicies/>}/>
         </Routes>
 
     </>

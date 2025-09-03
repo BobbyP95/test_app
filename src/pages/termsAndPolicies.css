@@ -1,0 +1,78 @@
+.main-topic-sec{
+    font-size: 2rem;
+    font-weight: bold;
+    min-height: 30dvh;
+    width: 100dvw;
+    background-image: url("/terms.jpg");
+    background-size: cover;
+}
+.main-topic-sec div{
+    background-color: #022c22cd;
+    color: white;
+    min-height: 30dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.privacy-policy-sec{
+    min-height: 70dvh;
+    width: 100dvw;
+    color: #022c22;
+    background-color: #f3f2f2;
+    padding: 5% 5%;
+ 
+}    
+
+
+.main_list li::marker{
+    color: #022c22;
+    font-weight: bold;
+
+}
+
+.terms_conditions{
+    min-height: 70dvh;
+    width: 100dvw;
+    color: #022c22;
+    padding: 5% 5%;
+ 
+}  
+
+.services{
+    min-height: 70dvh;
+    width: 100dvw;
+    color: #022c22;
+    background-color: #f3f2f2;
+    padding: 5% 5%;
+ 
+}  
+
+
+@media screen and (min-width: 900px) {
+    .main-topic-sec{
+        font-size: 2.5rem;
+       
+    }
+    .main-topic-sec div{
+        padding: 0% 2%;
+        text-align: center;
+        
+    }
+    .privacy-policy-sec{
+        padding:30dvw;
+        
+        padding: 5% 15%;
+    }
+    .terms_conditions{
+        padding:30dvw;
+        
+        padding: 5% 15%;
+    }
+    .services{
+        padding:30dvw;
+        
+        padding: 5% 15%;
+    }
+}
