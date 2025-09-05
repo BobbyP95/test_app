@@ -1,37 +1,39 @@
+import "../components/footer.css";
 export function Footer() {
   return (
-    <><div className="w-full bottom-0 text-white">
+    <><div className="w-full bottom-0 text-white ">
       <div className="bg-emerald-950 p-7 grid grid-cols-3  gap-4 text-sm md:text-md lg:text-xl ">
         
-        <div className="flex flex-col w-60 ">
-          <h1 className="font-bold text-left">Company</h1>
+        <div className="v-list flex flex-col w-60  ">
+          <h1 className="font-bold text-left"><a href="#/">Company</a></h1>
           <div className=" mt-3 flex flex-col text-left gap-2" >
-          <h3>About</h3>
-          <h3>Contact</h3>
-          <h3>Blog</h3>
+          <h3><a href="#/about_us">About</a></h3>
+          <h3><a href="#/contact_us">Contact</a></h3>
+          <h3><a href="#/consulting">Consulting</a></h3>
           </div>
         </div>
-        <div className="flex flex-col  w-60">
-          <h1 className="font-bold text-left" >Terms & Policies</h1>
+        <div className="v-list flex flex-col  w-60 ">
+          <h1 className="font-bold text-left" ><a href="#/terms">Terms & Policies</a></h1>
           <div className=" mt-3 flex flex-col text-left gap-2" >
-          <h3>Policies</h3>
-          <h3>Terms of Use</h3>
-          <h3>Code of Conduct</h3>
-          <h3>Privacy</h3>
+          <h3><a href="#/terms/">Privacy Policy</a></h3>
+          <h3><a href="#/terms/">Rights</a></h3>
+          <h3><a href="#/terms/">Conditions</a></h3>
+          <h3><a href="#/terms/">Services</a> </h3>
           </div>
         </div>
-        <div className="flex flex-col w-auto">
+        <div className="v-list flex-col w-auto ml-10 ">
           <h1 className="font-bold text-left" >Follow Us</h1>
           <div className=" mt-3 flex flex-col text-left gap-2" >
-          <h3>Policies</h3>
-          <h3>Terms of Use</h3>
-          <h3>Code of Conduct</h3>
-          <h3>Privacy</h3>
+          <h3><a href="https://www.facebook.com/recruitingfirm" target="_blank">Facebook</a></h3>
+          <h3><a href="https://www.threads.com/@gbd_recruit?xmt=AQF0gNNzZHRmbEZGCrGkJ0FAKexdF9chyR98c41tG5orGhg" target="_blank">Thread</a></h3>
+          <h3><a href="https://www.instagram.com/gbd_recruit/" target="_blank">Instagram</a></h3>
+          <h3><a href="https://www.linkedin.com/company/gbd-recruit-global-ventures-limited/" target="_blank" >Linkedin</a></h3>
+          
           </div>
         </div>
         <div className="flex flex-col w-60 ">
-          <img className="w-40" src="/gbd.svg" alt="Logo" />
-          <h1 className="my-10 text-left font-extrabold text-white">
+          <a href="#/"><img className="w-40" src="/gbd.svg" alt="Logo" /></a>
+          <h1 className="my-10 text-left font-extrabold text-white cursor-pointer">
             GBD Company LTD
           </h1>
         </div>

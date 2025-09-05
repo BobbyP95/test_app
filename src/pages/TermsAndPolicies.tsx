@@ -1,5 +1,6 @@
 
 import "./termsAndPolicies.css";
+import { Footer } from "../components/Footer";
 export function TermsAndPolicies(){
     return(
         <div className="min-h-screen">
@@ -8,13 +9,13 @@ export function TermsAndPolicies(){
             <h1>TERMS AND POLICIES</h1>
         </div>
         </section>
-        <section className="privacy-policy-sec text-left font-normal " >
+        <section id="privacy_policy" className="privacy-policy-sec text-left font-normal " >
             <h1 className=" font-sans text-4xl text-wrap pb-3"> <b>Privacy Policy for GBD Recruit Firm</b></h1>
             <h2 className="">Last Updated: 25/08/2025</h2>
             <h2>Your Privacy Rights</h2>
             <p>GBD Recruit Firm ("we," "us," "our") is committed to protecting your privacy. This policy explains how we collect, use, disclose, and safeguard your information when you visit our website <a href="https://gbdrecruit.com/">https://gbdrecruit.com/</a> or use our recruitment services. Please read this policy carefully.</p>
             <ul className="main_list list-decimal pl-4 mt-9 ">
-                <li className="" > <strong className="text-xl  ">Information We Collect</strong>
+                <li id="information_collected" className="" > <strong className="text-xl  ">Information We Collect</strong>
                     <p className="pb-3">We collect information that you provide directly to us and automatically when you use our site.</p>
                     <h3><strong>A. Information from Candidates (Job Seekers):</strong> </h3>
                     <ul className="list-disc pl-6 pb-3">
@@ -36,7 +37,7 @@ export function TermsAndPolicies(){
                     </ul>
                 </li>
 
-                <li className="" > <strong className="text-xl  ">How We Use Your Information</strong>
+                <li id="information_used" className="" > <strong className="text-xl  ">How We Use Your Information</strong>
                     <p className="pb-3">We use your information for the following purposes:</p>
                     <ul className="list-disc pl-6 pb-3">
                         <li ><strong>For Candidates:</strong> To assess your skills and qualifications for potential job opportunities, to submit your application to potential employers, to conduct reference checks, and to communicate with you about the recruitment process. </li>
@@ -60,7 +61,7 @@ export function TermsAndPolicies(){
                     <p className="pb-3">We will retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy. For candidates, we typically retain your profile for 24 months after our last interaction to consider you for future opportunities. You may request deletion of your data at any time.</p>
                 </li>
 
-                <li className="" > <strong className="text-xl  ">Your Rights</strong>
+                <li id="rights" className="" > <strong className="text-xl  ">Your Rights</strong>
                     <p className="pb-3">Depending on your location, you may have the right to:</p>
                     <ul className="list-disc pl-6 pb-3">
                         <li>Access and receive a copy of your personal data.</li>
@@ -74,7 +75,7 @@ export function TermsAndPolicies(){
                 <li className="" > <strong className="text-xl  ">Data Security</strong>
                     <p className="pb-3">We implement appropriate technical and organizational security measures designed to protect your personal data from unauthorized access, alteration, or destruction. However, no method of transmission over the Internet is 100% secure.</p>
                 </li>
-                <li className="" > <strong className="text-xl  ">Changes to This Policy</strong>
+                <li id="changes" className="" > <strong className="text-xl  ">Changes to This Policy</strong>
                     <p className="pb-3">We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last Updated" date.</p>
                 </li>
 
@@ -95,7 +96,7 @@ export function TermsAndPolicies(){
         </section>
         
         
-        <section className="terms_conditions text-left font-normal pb-10">
+        <section id="terms_conditions" className="terms_conditions text-left font-normal pb-10">
             <h1 className="font-sans text-3xl text-wrap text-center font-bold p-10">Terms and Conditions</h1>
         
 
@@ -233,24 +234,11 @@ export function TermsAndPolicies(){
                     <p className="pb-3">Questions about these Terms should be sent to us at info@gbdrecruit.com.
 3. Refund Policy for GBD Recruit Firm</p>
                 </li> */}
-
-                 <li className="" > <strong className="text-xl  "> Contact Us</strong>
-                    <p className="pb-3">If you have any questions about this Privacy Policy, please contact us at:</p>
-                    <p><strong>GBD Recruit Firm</strong></p>
-                    <p>
-                        19 OGUNSHOLA, IFELODUN JOGBODILE IFO, Sango Otta, Ogun, Nigeria 112104
-                    </p>
-                    <p>
-                       <strong>Email:</strong> info@gbdrecruit.com
-                    </p>
-                    <p>
-                       <strong>Phone:</strong> +2347026285552
-                    </p>
-                </li>
             </ul>
-            
         </section>
 
+<Footer />
         </div>
+        
     )
 }
