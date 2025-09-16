@@ -87,7 +87,7 @@ export function Footer() {
               GBD Company LTD
             </h1>
           </div>
-          <div className="v-list flex flex-col  w-60 main-loc">
+          <div id="main-loc" className=" v-list flex flex-col   w-60 ">
             
             <div className=" mt-3 flex flex-row text-left gap-2">
               <img src={loc} alt="location" className="w-5" />
@@ -107,7 +107,7 @@ export function Footer() {
             </div>
           </div>
         </div> 
-        <div className="v-list flex flex-col    bg-emerald-950 p-7 phone-loc">
+        <div className="v-list flex flex-col  md:hidden  bg-emerald-950 p-7 phone-loc">
             
             <div className=" mt-3 flex flex-row text-left gap-2">
               <img src={loc} alt="location" className="w-5" />

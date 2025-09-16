@@ -1,12 +1,7 @@
-.phone-loc{
-    display: none;
-}
 
-@media (max-width: 600px) {
-    .main-loc{
+@media screen and (max-width: 780px) {
+    #main-loc{
         display: none;
     }
-    .phone-loc{
-        display: block;
-    }
+    
 }
