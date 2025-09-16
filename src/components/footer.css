@@ -1,0 +1,12 @@
+.phone-loc{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .main-loc{
+        display: none;
+    }
+    .phone-loc{
+        display: block;
+    }
+}
