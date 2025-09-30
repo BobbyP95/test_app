@@ -103,7 +103,11 @@ export function Footer() {
             </div>
             <div className=" mt-3 flex flex-row text-left gap-2">
               <img src={phone} alt="phone" className="w-5" />
-              <span className="font-normal text-sm" > +2347026285552</span>
+              <span className="font-normal text-sm" > +234 702 628 5552</span>
+            </div>
+            <div className=" mt-3 flex flex-row text-left gap-2">
+              <img src={phone} alt="phone" className="w-5" />
+              <span className="font-normal text-sm" > +233 500 433 221</span>
             </div>
           </div>
         </div> 
@@ -123,7 +127,11 @@ export function Footer() {
             </div>
             <div className=" mt-3 flex flex-row text-left gap-2">
               <img src={phone} alt="phone" className="w-5" />
-              <span className="font-normal text-sm" > +2347026285552</span>
+              <span className="font-normal text-sm" > +234 702 628 5552</span>
+            </div>
+            <div className=" mt-3 flex flex-row text-left gap-2">
+              <img src={phone} alt="phone" className="w-5" />
+              <span className="font-normal text-sm" > +233 500 433 221</span>
             </div>
           </div>
         <div className="bg-emerald-950 p-7 flex justify-around text-xl font-light items-center text-white ">
