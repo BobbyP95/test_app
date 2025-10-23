@@ -4,6 +4,7 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 
 export function ContactUs() {
+   window.scroll(0, 0);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",

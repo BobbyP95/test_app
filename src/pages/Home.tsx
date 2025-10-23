@@ -29,6 +29,7 @@ const sections = [
 ];
 
 export function Home() {
+   window.scroll(0, 0);
   return (
     <>
       <div className="home flex flex-col md:flex-row ">

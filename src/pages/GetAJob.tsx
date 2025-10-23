@@ -2,6 +2,7 @@
 
 
 export function GetAJob(){
+     window.scroll(0, 0);
     return(
         <><div className="pt-28">
 

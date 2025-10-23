@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Consulting.css";
 
 export function Consulting() {
+   window.scroll(0, 0);
   return (
     <>
       <div className="consulting-grid   ">

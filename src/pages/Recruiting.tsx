@@ -14,6 +14,7 @@ type FormDataType = {
   country: string;
 };
 export function Recruiting() {
+   window.scroll(0, 0);
   const [formData, setFormData] = useState<FormDataType>({
     firstName: "",
     lastName: "",

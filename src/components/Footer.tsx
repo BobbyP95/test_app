@@ -29,16 +29,13 @@ export function Footer() {
             </h1>
             <div className=" mt-3 flex flex-col text-left gap-2">
               <h3>
-                <a href="#/terms/">Privacy Policy</a>
-              </h3>
-              <h3>
-                <a href="#/terms/">Rights</a>
+                <a href="#/privacy_policy/">Privacy Policy</a>
               </h3>
               <h3>
                 <a href="#/terms/">Conditions</a>
               </h3>
               <h3>
-                <a href="#/terms/">Services</a>{" "}
+                <a href="#/services/">Services</a>
               </h3>
             </div>
           </div>

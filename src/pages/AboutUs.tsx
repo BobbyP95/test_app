@@ -2,6 +2,7 @@ import "./aboutUs.css";
 import { Footer } from "../components/Footer";
 import { Link } from "react-router-dom"
 export function AboutUs() {
+   window.scroll(0, 0);
   return (
     <>
       <div className="about-grid main-grid ">
